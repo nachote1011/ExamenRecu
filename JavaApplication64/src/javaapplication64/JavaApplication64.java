@@ -20,8 +20,13 @@ public class JavaApplication64 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
-        int[] numeros = new int[10];
-        int num;
+       
+        int num,tamano;
+        do{
+            System.out.println("anota el tamano del array max 10");
+            tamano=sc.nextInt();
+        }while(tamano<10);
+        int[]numeros=new int[tamano];
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("di un numero");
             num = sc.nextInt();

@@ -21,9 +21,16 @@ public class JavaApplication64 {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         int[] numeros = new int[10];
+        int num;
         for (int i = 0; i < numeros.length; i++) {
             System.out.println("di un numero");
-            numeros[i] = sc.nextInt();
+            num = sc.nextInt();
+            if (repe(numeros, num) == true) {
+                numeros[i] = num;
+            } else {
+                System.out.println("Numero repetido");
+            }
+
         }
         Arrays.sort(numeros);
         for (int i = 0; i < numeros.length; i++) {

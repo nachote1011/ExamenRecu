@@ -30,5 +30,16 @@ public class JavaApplication64 {
             System.out.println(numeros[i]);
         }
     }
-    
+
+    public static boolean repe(int[] numeros, int num) {
+        boolean repetido = false;
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] == num) {
+                repetido = true;
+            }
+
+        }
+        return false;
+    }
+
 }
